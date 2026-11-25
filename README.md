@@ -6,7 +6,7 @@ MedTrace answers questions about breast cancer using only the documents you give
 
 > For research and education. Not medical advice.
 
-[Live demo](#) · [2-minute walkthrough](#) · [Eval results](#results)
+[**Live demo**](https://medtrace-faisal.streamlit.app/) · [Eval results](#results)
 
 ---
 
@@ -128,6 +128,6 @@ tests/           including scripted "hallucinating LLM" tests
 
 ## About
 
-Built by **Md Faisal Islam**, AI Engineer. This project grew out of my research on knowledge-graph-grounded clinical LLMs and uncertainty-aware models with the University of Idaho. [LinkedIn](#) · faisalislam1610@gmail.com
+Built by **Md Faisal Islam**, AI Engineer. This project grew out of my research on knowledge-graph-grounded clinical LLMs and uncertainty-aware models with the University of Idaho. faisalislam1610@gmail.com
 
 MIT License.
