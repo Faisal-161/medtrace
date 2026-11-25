@@ -1,0 +1,12 @@
+[
+  {"subject": "trastuzumab", "relation": "targets", "object": "HER2"},
+  {"subject": "pertuzumab", "relation": "targets", "object": "HER2"},
+  {"subject": "tamoxifen", "relation": "blocks", "object": "estrogen receptors"},
+  {"subject": "letrozole", "relation": "is_a", "object": "aromatase inhibitor", "aliases": {"object": ["aromatase inhibitors"]}},
+  {"subject": "anastrozole", "relation": "is_a", "object": "aromatase inhibitor", "aliases": {"object": ["aromatase inhibitors"]}},
+  {"subject": "BRCA1", "relation": "increases_risk_of", "object": "breast cancer"},
+  {"subject": "BRCA2", "relation": "increases_risk_of", "object": "breast cancer"},
+  {"subject": "mammography", "relation": "screens_for", "object": "breast cancer", "aliases": {"subject": ["mammogram"]}},
+  {"subject": "triple-negative", "relation": "treated_with", "object": "chemotherapy"},
+  {"subject": "HER2-positive", "relation": "treated_with", "object": "HER2-targeted drugs"}
+]

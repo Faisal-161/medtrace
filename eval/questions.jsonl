@@ -1,0 +1,16 @@
+{"id": "q01", "question": "What drug is a monoclonal antibody that targets HER2?", "answerable": true, "expected_sources": ["her2_and_receptors.md"], "must_include": ["trastuzumab"]}
+{"id": "q02", "question": "How is HER2 status tested?", "answerable": true, "expected_sources": ["her2_and_receptors.md"], "must_include": ["immunohistochemistry"]}
+{"id": "q03", "question": "What is the main systemic treatment for triple-negative breast cancer?", "answerable": true, "expected_sources": ["her2_and_receptors.md"], "must_include": ["chemotherapy"]}
+{"id": "q04", "question": "How does tamoxifen work against cancer cells?", "answerable": true, "expected_sources": ["her2_and_receptors.md"], "must_include": ["estrogen"]}
+{"id": "q05", "question": "Which genes with inherited mutations increase breast cancer risk?", "answerable": true, "expected_sources": ["risk_and_genetics.md"], "must_include": ["BRCA1"]}
+{"id": "q06", "question": "What percent of breast cancers are linked to inherited gene mutations?", "answerable": true, "expected_sources": ["risk_and_genetics.md"], "must_include": ["10 percent"]}
+{"id": "q07", "question": "Why is breast MRI mainly used for women at high risk?", "answerable": true, "expected_sources": ["screening_and_diagnosis.md"], "must_include": ["false-positive"]}
+{"id": "q08", "question": "What is the only way to know for sure whether a breast change is cancer?", "answerable": true, "expected_sources": ["screening_and_diagnosis.md"], "must_include": ["biopsy"]}
+{"id": "q09", "question": "What do the letters in the TNM staging system stand for?", "answerable": true, "expected_sources": ["screening_and_diagnosis.md"], "must_include": ["lymph nodes"]}
+{"id": "q10", "question": "What is neoadjuvant chemotherapy?", "answerable": true, "expected_sources": ["treatment_overview.md"], "must_include": ["before surgery"]}
+{"id": "q11", "question": "Why is radiation therapy given after breast-conserving surgery?", "answerable": true, "expected_sources": ["treatment_overview.md"], "must_include": ["comes back"]}
+{"id": "q12", "question": "What are common side effects of chemotherapy?", "answerable": true, "expected_sources": ["treatment_overview.md"], "must_include": ["nausea"]}
+{"id": "q13", "question": "What is the recommended dose of metformin for type 2 diabetes?", "answerable": false}
+{"id": "q14", "question": "Who won the 2022 FIFA World Cup?", "answerable": false}
+{"id": "q15", "question": "How is prostate cancer graded with the Gleason score?", "answerable": false}
+{"id": "q16", "question": "What vaccine schedule is recommended for measles in children?", "answerable": false}
