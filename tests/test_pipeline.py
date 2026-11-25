@@ -86,3 +86,12 @@ def test_api_health_and_ask(engine, settings, monkeypatch):
     assert client.get("/health").json()["status"] == "ok"
     body = client.post("/ask", json={"question": "How is HER2 status tested?"}).json()
     assert body["abstained"] is False and body["citations"]
+
+
+def test_load_or_build_creates_index_when_missing(settings):
+    from medtrace.pipeline import MedTrace as MT
+
+    engine = MT.load_or_build(str(ROOT / "data/sample"), settings)
+    assert len(engine.index) > 0
+    assert (Path(settings.index_dir) / "meta.json").exists()
+    assert len(MT.load_or_build(str(ROOT / "data/sample"), settings).index) == len(engine.index)

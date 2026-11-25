@@ -26,9 +26,11 @@ jobs:
           path: eval/results.json
 
   deploy:
-    # Ship the demo to Hugging Face Spaces only after tests pass on main.
+    # Optional: ship the demo to Hugging Face Spaces after tests pass on main.
+    # Docker Spaces need a Hugging Face PRO plan. To turn this on, set the repo variable HF_DEPLOY=true
+    # and the secret HF_TOKEN. The free demo runs on Streamlit Community Cloud instead.
     needs: test
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: vars.HF_DEPLOY == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

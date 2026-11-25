@@ -72,6 +72,12 @@ make ui        # Streamlit demo
 
 With Docker: `cp .env.example .env && docker compose up --build`
 
+### Deploy the demo (free)
+
+On [Streamlit Community Cloud](https://share.streamlit.io): **Create app** → this repo, branch `main`, main file `ui/app.py`. It installs `ui/requirements.txt` and builds the index on first load. Pushes to `main` redeploy automatically.
+
+A Hugging Face Space deploy is also included (`deploy/`, needs a PRO plan): set the repo variable `HF_DEPLOY=true` and the secret `HF_TOKEN`.
+
 ### Use real models
 
 In `.env`:

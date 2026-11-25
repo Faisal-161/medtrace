@@ -1,0 +1,5 @@
+# Lightweight dependencies for the hosted Streamlit demo (Streamlit Community Cloud reads this file).
+numpy>=1.26
+pydantic>=2.6
+pypdf>=4.0
+streamlit>=1.33

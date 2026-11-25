@@ -69,6 +69,14 @@ class MedTrace:
             get_reranker(s.reranker),
         )
 
+    @classmethod
+    def load_or_build(cls, docs_path: str, settings: Settings | None = None) -> MedTrace:
+        """Load the saved index, or build it from `docs_path` if none exists (e.g. a fresh cloud deploy)."""
+        try:
+            return cls.from_settings(settings)
+        except FileNotFoundError:
+            return cls.build(docs_path, settings)
+
     # Main entry point -------------------------------------------------------------------------
     def retrieve(self, question: str) -> list[RetrievedChunk]:
         s = self.settings

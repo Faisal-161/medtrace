@@ -1,8 +1,15 @@
 """Streamlit demo UI. Run: streamlit run ui/app.py"""
 
+import sys
+from pathlib import Path
+
 import streamlit as st
 
-from medtrace.pipeline import MedTrace
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))  # so `medtrace` imports when hosted without `pip install`
+
+from medtrace.config import get_settings  # noqa: E402
+from medtrace.pipeline import MedTrace  # noqa: E402
 
 st.set_page_config(page_title="MedTrace", page_icon=None, layout="wide")
 st.title("MedTrace")
@@ -14,7 +21,10 @@ st.caption(
 
 @st.cache_resource
 def engine() -> MedTrace:
-    return MedTrace.from_settings()
+    settings = get_settings()
+    settings.index_dir = str(ROOT / settings.index_dir)
+    settings.kg_path = str(ROOT / settings.kg_path)
+    return MedTrace.load_or_build(str(ROOT / "data/sample"), settings)
 
 
 question = st.text_input("Ask a question about breast cancer", placeholder="What does HER2-positive mean?")
